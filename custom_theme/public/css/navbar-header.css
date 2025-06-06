@@ -1,0 +1,97 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+header.navbar.navbar-expand {
+    width: 100vw;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom: 1px solid rgba(var(--custom-theme-rgb-500), 0.5);
+    background-color: rgba(var(--custom-theme-rgb-500), 0.2);
+}
+
+.navbar {
+    height: 60px;
+}
+
+/* Sửa lại page vì fixed header */
+.layout-main-section {
+    margin-top: 60px;
+}
+
+.page-head.flex {
+    top: 60px !important;
+    margin: auto 4px;
+}
+
+.col-lg-2.layout-side-section {
+    margin-top: 60px;
+}
+
+.custom-navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 84px;
+}
+
+#header-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#header-menu .menu-icon {
+    padding: 8px;
+}
+
+#header-menu .menu-icon label {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #000;
+    padding-left: 20px;
+}
+
+#header-menu .menu-content-wrapper {
+    height: calc(100vh - 60px);
+    background-color: var(--bg-color);
+    width: 340px;
+    top: 60px;
+    position: absolute;
+    margin-left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#header-menu .menu-content {
+    margin: 16px;
+}
+
+#is-show-header-menu {
+    display: none;
+    width: 100%;
+}
+
+#is-show-header-menu:not(:checked) ~ .menu-icon label .close-menu-button {
+    display: none;
+}
+
+#is-show-header-menu:checked ~ .menu-icon label .open-menu-button {
+    display: none;
+}
+
+#is-show-header-menu:not(:checked) ~ .menu-content-wrapper {
+    display: none !important;
+}
+
+#header-menu .menu-content-item {
+    padding: 16px 4px;
+    border-width: 1px;
+    margin: auto;
+}
+
+#header-menu .menu-content-item:hover {
+    border: 1px solid var(--custom-theme-300);
+    border-radius: 8px;
+    color: var(--custom-theme-500);
+}

@@ -1,0 +1,96 @@
+#custom-sidebar {
+    width: 340px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 60px;
+}
+
+/* Menu main danh sách các modules */
+#main-menu {
+    width: 84px;
+    height: 100vh;
+    float: left;
+    overflow: auto;
+    background-color: rgba(var(--custom-theme-rgb-600), 0.8);
+    color: #fff;
+}
+
+#custom-sidebar #main-menu .main-menu-item.active {
+    background-color: var(--custom-theme-400);
+}
+
+#custom-sidebar #main-menu .main-menu-item:hover {
+    background-color: var(--custom-theme-500);
+}
+
+#custom-sidebar #main-menu .main-menu-item {
+    margin: 12px 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 2px;
+    border-radius: 4px;
+}
+
+#custom-sidebar #main-menu .main-menu-item:not(:first-child) {
+    margin-top: 20px;
+}
+
+#custom-sidebar #main-menu .main-menu-item:last-child {
+    margin-bottom: 60px;
+}
+
+#custom-sidebar #main-menu .main-menu-item span {
+    font-size: 12px;
+}
+
+/* Menu nhỏ của mỗi module */
+#page-menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    margin-left: 80px;
+    border-right: 1px solid var(--custom-theme-300);
+    background-color: rgba(var(--custom-theme-rgb-500), 0.2);
+}
+
+#custom-sidebar #workspaceTabContent {
+    padding: 12px 8px;
+}
+
+.custom-btn.custom-btn-outline-primary {
+    padding: 10px 16px;
+    width: 100%;
+    background: rgba(var(--custom-theme-rgb-100), 0.4);
+    text-align: left;
+    border: 1px solid rgba(var(--custom-theme-rgb-500), 0.4);
+    border-radius: 4px;
+}
+
+.custom-btn.custom-btn-outline-primary:hover {
+    border-color: var(--custom-theme-500);
+    color: var(--custom-theme-500);
+}
+
+h4#menu-title {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#custom-sidebar #workspaceTab {
+    padding: 0 12px;
+    border-bottom: 1px solid rgba(var(--custom-theme-rgb-600), 0.4);
+}
+
+/* Toggle menu filter */
+.btn-toggle-sidebar {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 4;
+    background-color: var(--bg-color);
+    border: 1px solid rgba(var(--custom-theme-rgb-300), 0.6);
+}

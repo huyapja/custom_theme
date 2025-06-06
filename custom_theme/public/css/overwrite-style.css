@@ -1,0 +1,92 @@
+/* Button */
+.btn {
+    --btn-primary: rgba(var(--custom-theme-rgb-600), 0.9);
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: rgba(var(--custom-theme-rgb-500), 0.8) !important;
+}
+
+/* Input */
+.form-control:focus {
+    color: var(--text-color);
+    background-color: var(--control-bg);
+    border-color: rgba(var(--custom-theme-rgb-500), 0.7) !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(var(--custom-theme-rgb-500), 0.25);
+}
+
+input[type=checkbox]:checked {
+    background-color: rgba(var(--custom-theme-rgb-500), 0.9) !important;
+    background-image: url("data:image/svg+xml, <svg viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.00001L2.66667 5.80001L7 1.20001' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+/* Ẩn menu ở màn chính  */
+#page-Workspaces .layout-side-section {
+    display: none !important;
+}
+
+/* Page content rộng hết, k cần canttainer */
+.page-container .page-body {
+    margin: 0;
+    width: 100% !important;
+}
+
+/* Thẻ trong các màn */
+.widget.links-widget-box {
+    padding: 0;
+    background-color: rgba(var(--custom-theme-rgb-400), 0.1);
+    border: 1px solid var(--custom-theme-200);
+    overflow: hidden;
+}
+
+.widget.links-widget-box .widget-head {
+    background-color: rgba(var(--custom-theme-rgb-200), 0.7);
+    padding: 12px 16px;
+    color: var(--custom-theme-600) !important;
+}
+
+.widget.links-widget-box .widget-label .ellipsis {
+    color: var(--custom-theme-700) !important;
+}
+
+.widget.links-widget-box .widget-body {
+    padding: 4px 12px;
+}
+
+.widget.links-widget-box .widget-body .link-item {
+    background-color: rgba(var(--custom-theme-rgb-400), 0.15);
+    padding: 8px 12px;
+}
+
+.widget.links-widget-box .widget-body .link-item:not(:first-child) {
+    margin-top: 10px;
+}
+
+.widget.links-widget-box .widget-body .link-item .link-content {
+    transition: transform 0.3s ease-out, color 0.3s ease-out;
+}
+
+.widget.links-widget-box .widget-body .link-item:hover .link-content {
+    color: var(--custom-theme-600);
+    transform: translateX(8px);
+}
+
+.widget.links-widget-box .widget-footer {
+    padding: 12px;
+}
+
+/* Bỏ container của header nhỏ trong page */
+.page-head.flex .container {
+    margin: auto 0 !important;
+}
+
+/* Tab của menu con */
+.nav-link.active {
+    background-color: unset !important;
+    border-color: rgba(var(--custom-theme-rgb-600), 0.4) !important;
+    color: unset !important;
+}
+
+.nav-link:hover {
+    border: 1px solid rgba(var(--custom-theme-rgb-500), 0.5) !important;
+}

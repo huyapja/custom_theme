@@ -1,0 +1,5 @@
+{
+    "js/custom_theme.js": "public/js/custom_theme.js",
+    "js/update_dom.js": "public/js/update_dom.js",
+    "js/build_menu.js": "public/js/build_menu.js"
+}

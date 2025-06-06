@@ -1,0 +1,8 @@
+@media (max-width: 1028px) {
+    #custom-sidebar {
+        display: none;
+    }
+    #body {
+        margin-left: 0 !important;
+    }
+}
